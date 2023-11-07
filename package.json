@@ -1,4 +1,5 @@
 {
+	"homepage": "https://TharunNB.github.io/node/",
 	"author": "Tharun N B",
 	"name": "fcc-learn-npm-package-json",
 	"dependencies": {
@@ -7,6 +8,8 @@
 	},
 	"main": "server.js",
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "node server.js"
 	},
 	"repository": {
